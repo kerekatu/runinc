@@ -1,0 +1,17 @@
+.sidebar {
+  background-color: $color-contrast;
+  padding: 10rem 5rem;
+
+  @include respond(phone) {
+    padding: 10rem 3rem;
+  }
+
+  &__item {
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+}

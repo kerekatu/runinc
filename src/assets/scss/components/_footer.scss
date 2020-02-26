@@ -1,0 +1,20 @@
+.footer {
+  grid-column: 1 / 2;
+  grid-row: 3 / -1;
+  background-color: $color-black;
+  color: $color-white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @include respond(phone) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  &__link:link,
+  &__link:visited {
+    color: currentColor;
+  }
+}

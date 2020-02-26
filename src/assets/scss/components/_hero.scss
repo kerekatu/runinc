@@ -1,0 +1,21 @@
+.hero {
+  position: relative;
+  height: calc(100vh - 8rem);
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+
+    @include respond(phone) {
+      object-position: left;
+    }
+  }
+
+  & > .heading-primary {
+    bottom: 30%;
+    right: 0;
+  }
+}

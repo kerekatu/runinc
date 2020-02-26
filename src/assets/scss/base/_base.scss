@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+button,
+textarea,
+input {
+  font-family: $font-family;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  pointer-events: none;
+}
+
+html {
+  font-size: 62.5%; // 1px = 0.1rem
+  box-sizing: border-box;
+
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+
+  @include respond(phone) {
+    font-size: 45%;
+  }
+}
+
+body {
+  min-height: 100vh;
+  font-size: $font-size;
+  font-family: $font-family;
+  font-weight: $font-normal;
+  line-height: $line-height;
+}
+
+#app {
+  display: grid;
+  grid-template-rows: [header] 7rem [main-content] 1fr;
+  max-width: $page-width-max;
+  margin: 0 auto;
+  padding: 1rem 1rem 0 1rem;
+  min-height: 100vh;
+
+  @include respond(desktop) {
+    padding: 0;
+  }
+
+  @include respond(phone) {
+    grid-template-rows: [header] max-content [main-content] 1fr;
+  }
+}

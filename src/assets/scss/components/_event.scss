@@ -1,0 +1,28 @@
+.event {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  position: relative;
+  height: calc(100vh - 8rem);
+
+  @include respond(desktop) {
+    height: calc(100vh - 7rem);
+  }
+
+  @include respond(phone) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  & > .heading-primary {
+    position: absolute;
+    top: 30%;
+    left: 0;
+  }
+}

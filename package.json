@@ -1,0 +1,65 @@
+{
+  "name": "ktr-react-app",
+  "version": "1.0.0",
+  "description": "Runinc",
+  "keywords": [
+    "boilerplate",
+    "react",
+    "webpack",
+    "sass"
+  ],
+  "author": {
+    "name": "Konrad Rosa",
+    "email": "info@konradrosa.com",
+    "url": "https://konradrosa.com"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
+    "@fortawesome/free-solid-svg-icons": "^5.12.1",
+    "@fortawesome/react-fontawesome": "^0.1.8",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.4.2",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react-hooks": "^2.4.0",
+    "file-loader": "^5.1.0",
+    "live-server": "^1.2.1",
+    "node-sass": "^4.13.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-hook-form": "^4.9.8",
+    "react-router-dom": "^5.1.2",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.3",
+    "url-loader": "^3.0.0",
+    "webpack": "^4.41.6",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "devDependencies": {
+    "are-you-es5": "^1.3.3",
+    "webpack-cli": "^3.3.11",
+    "webpackbar": "^4.0.0"
+  },
+  "scripts": {
+    "serve": "live-server public/",
+    "build": "webpack --production",
+    "dev-server": "webpack-dev-server",
+    "es5": "are-you-es5 check ./ -r"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

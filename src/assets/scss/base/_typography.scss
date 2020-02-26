@@ -1,0 +1,59 @@
+.heading-primary {
+  text-transform: uppercase;
+  font-size: 4.2rem;
+  font-weight: $font-normal;
+  background-color: $color-black;
+  color: $color-white;
+  width: 70rem;
+  padding-left: 3rem;
+  position: absolute;
+
+  @include respond(desktop) {
+    top: 0 !important;
+    bottom: initial !important;
+    width: 100%;
+    display: block;
+    position: static;
+  }
+
+  &--highlight {
+    color: $color-contrast;
+  }
+}
+
+.heading-secondary {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 3rem;
+}
+
+.input-primary,
+.btn-primary,
+.textarea-primary {
+  padding: 0.6rem 1rem;
+  font-size: 1.6rem;
+}
+
+.input-primary,
+.textarea-primary {
+  width: 30rem;
+  border: 0.2rem solid $color-black;
+  background-color: $color-contrast;
+}
+
+.textarea-primary {
+  resize: vertical;
+  height: 10rem;
+}
+
+.btn-primary {
+  color: $color-white;
+  background-color: $color-black;
+  border: 0.1rem solid $color-black;
+  text-transform: uppercase;
+}
+
+.label-primary {
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
